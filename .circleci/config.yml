@@ -44,6 +44,7 @@ jobs:
       - run:
           name: Deploy to GitHub Pages
           command: |
+            cp -R .circleci ./_book/
             git config user.email "circle-ci@congmingpai.com"
             git config user.name "Smartpi CircleCI"
             NODE_DEBUG=gh-pages yarn deploy
@@ -51,7 +52,11 @@ workflows:
   version: 2
   basic:
     jobs:
-      - lint
+      - lint:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
       - deploy:
           requires:
             - lint
