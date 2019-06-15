@@ -1,3 +1,4 @@
 {
-  "plugins": ["uml"]
+  "plugins": ["uml"],
+  "root": "./book"
 }
