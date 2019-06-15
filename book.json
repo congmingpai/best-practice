@@ -1,4 +1,9 @@
 {
   "plugins": ["uml"],
-  "root": "./book"
+  "root": "./book",
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  }
 }
