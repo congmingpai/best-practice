@@ -1,0 +1,32 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest
+    filters:
+      branches:
+        only: master
+    steps:
+      - add_ssh_keys:
+        fingerprints:
+          - "xx:xx:xx:xx:11:22:33:44:55:66:77:88:99:xx:xx:xx"
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Build docs
+          command: yarn build
+      - store_artifacts: 
+          path: _build
+      - run:
+          name: Publish GitHub Pages
+          command: NODE_DEBUG=gh-pages yarn publish
