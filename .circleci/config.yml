@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  build:
+  lint:
     docker:
       - image: circleci/openjdk:jdk-node
     filters:
@@ -20,10 +20,24 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: Build docs
+          name: Lint markdown
+          command: yarn lint
+  deploy:
+    docker:
+      - image: circleci/openjdk:jdk-node
+    filters:
+      branches:
+        only: master
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - run:
+          name: Build book
           command: yarn build
-      - store_artifacts: 
-          path: _build
       - add_ssh_keys:
           fingerprints:
             - "2c:85:42:cd:f3:4e:0b:14:25:76:75:5d:ce:8f:1e:96"
@@ -33,3 +47,15 @@ jobs:
             git config user.email "circle-ci@congmingpai.com"
             git config user.name "Smartpi CircleCI"
             NODE_DEBUG=gh-pages yarn deploy
+workflows:
+  version: 2
+  basic:
+    jobs:
+      - lint
+      - deploy:
+          requires:
+            - lint
+          filters:
+            branches:
+              only:
+                - master
