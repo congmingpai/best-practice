@@ -4,6 +4,11 @@
   "language": "zh-hans",
   "plugins": ["-search", "search-pro"],
   "root": "./book",
+  "links": {
+    "sidebar": {
+      "GitHub": "https://github.com/congmingpai/best-practice"
+    }
+  },
   "pluginsConfig": {
     "theme-default": {
       "showLevel": true
