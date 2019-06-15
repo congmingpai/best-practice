@@ -1,4 +1,6 @@
 {
+  "title": "Smartpi Best Practice",
+  "author": "Greg Wang <gregwym@users.noreply.github.com>",
   "plugins": ["-search", "search-pro"],
   "root": "./book",
   "pluginsConfig": {
