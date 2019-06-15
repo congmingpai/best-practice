@@ -17,6 +17,7 @@
     "markdownlint-cli": "^0.17.0"
   },
   "dependencies": {
-    "gitbook": "^2.6.9"
+    "gitbook": "^2.6.9",
+    "gitbook-plugin-search-pro": "^2.0.2"
   }
 }

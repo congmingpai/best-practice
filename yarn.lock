@@ -1936,6 +1936,13 @@ gitbook-plugin-livereload@0.0.1:
   resolved "https://registry.yarnpkg.com/gitbook-plugin-livereload/-/gitbook-plugin-livereload-0.0.1.tgz#c0c9dc6f55f82fc24f97532b25287abbbb416b96"
   integrity sha1-wMncb1X4L8JPl1MrJSh6u7tBa5Y=
 
+gitbook-plugin-search-pro@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-search-pro/-/gitbook-plugin-search-pro-2.0.2.tgz#7ce76e8f65c2044489b9c692736b23f81fe6a1f2"
+  integrity sha1-fOduj2XCBESJucaSc2sj+B/mofI=
+  dependencies:
+    html-entities "1.2.0"
+
 gitbook-plugin-search@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-search/-/gitbook-plugin-search-1.1.0.tgz#3d36928a0518885c9ba3875aa96e66ffd96c4cf7"
@@ -2293,6 +2300,11 @@ hosted-git-info@~2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
   integrity sha512-pNgbURSuab90KbTqvRPsseaTxOJCZBD0a7t+haSN33piP9cCM4l0CqdzAif2hUqm716UovKB2ROmiabGAKVXyg==
+
+html-entities@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.0.tgz#41948caf85ce82fed36e4e6a0ed371a6664379e2"
+  integrity sha1-QZSMr4XOgv7Tbk5qDtNxpmZDeeI=
 
 htmlparser2@~3.8.1:
   version "3.8.3"

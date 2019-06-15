@@ -1,5 +1,5 @@
 {
-  "plugins": [],
+  "plugins": ["-search", "search-pro"],
   "root": "./book",
   "pluginsConfig": {
     "theme-default": {
