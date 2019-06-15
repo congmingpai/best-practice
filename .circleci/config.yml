@@ -24,6 +24,9 @@ jobs:
           command: yarn build
       - store_artifacts: 
           path: _build
+      - add_ssh_keys:
+        fingerprints:
+          - "2c:85:42:cd:f3:4e:0b:14:25:76:75:5d:ce:8f:1e:96"
       - run:
           name: Deploy to GitHub Pages
           command: |
