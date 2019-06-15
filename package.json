@@ -8,8 +8,7 @@
   "scripts": {
     "start": "gitbook serve",
     "build": "gitbook build",
-    "publish": "gh-pages -d _book -m 'Auto publish book'",
-    "deploy": "yarn build && yarn publish"
+    "deploy": "gh-pages -d _book -m 'Auto publish book'"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
