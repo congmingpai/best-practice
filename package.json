@@ -9,7 +9,7 @@
     "start": "gitbook serve",
     "build": "gitbook build",
     "lint": "markdownlint ./book",
-    "deploy": "gh-pages -d _book -m 'Auto publish book'"
+    "deploy": "gh-pages -d _book -m '[ci skip] Auto publish book'"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
