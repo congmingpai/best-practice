@@ -4,6 +4,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:latest
+      - image: circleci/openjdk:latest
     filters:
       branches:
         only: master
