@@ -36,9 +36,12 @@ const w; // 毫无意义
 const countCmp; // 含糊不清的缩写
 const failedRdCnt; // 删减字母后难以理解
 class FCGameCtl {} // FC有很多种解释，只有作者才能理解
+
+// More BAD
+const data; // 各种东西都可以是data
 ```
 
-### 类 (class)，接口 (Interface)，类型 (type)
+### 类 (class)，接口 (Interface)，类型 (type)，枚举 (enumeration)
 
 > 面向对象编程中，对象代表着一个具体的事物，而类是对象的模版，用来统一表示一种类型的事物，所以类的命名要以描述这一事物类型为目的。接口和类型同理。
 
@@ -81,11 +84,13 @@ jump(node); // 没有限定jump的目的，jumpToXxx会更明确；或作为方�
 | `checkXxx`                          | `checkParams`                      | 检查内容并返回 boolean         |
 | `validateXxx`                       | `validateParams`                   | 校验类型/内容，失败抛出异常    |
 | `convertToXxx` / `toXxx`            | `convertToString` / `toString`     | 转换类型/格式为 Xxx            |
+| `setXxx`                            | `setGameSpeed`                     | 设定某个 property 的值         |
+| `getXxx`                            | `getDuration`                      | 获取某个 property 的值         |
 | `onXxxx`                            | `onClicked`                        | Xxx 事件的响应逻辑 (handler)   |
 | `willXxx` / `aaaWillXxx` / `preXxx` | `componentWillMount` / `preRender` | Xxx 事件发生前的钩子 (prehook) |
 | `didXxx` / `aaaDidXxx` / `postXxx`  | `componentDidMount` / `postRender` | Xxx 事件发生前的钩子 (prehook) |
 
-### 变量 (variable)，类成员 (class member)
+### 变量 (variable)，类成员 (class member)，常量 (constant)
 
 变量和类成员命名时，应以名词结尾，辅以细节修饰。常见情况有，
 
@@ -96,3 +101,23 @@ jump(node); // 没有限定jump的目的，jumpToXxx会更明确；或作为方�
 | 过滤过的数组/集合 | 增加前缀修饰                 | `const activeUsers = users.filter(user => user.isActive)` |
 | 计数              | 以 count 结尾                | `const userCount = users.length`                          |
 | 映射              | 以 map 结尾                  | `const idToUserMap = new Map<number, User>()`             |
+| 集合              | 以 set 结尾                  | `const userSet = new Set(users)`                          |
+
+```js
+// GOOD
+const stagePrefab: cc.Prefab;
+const stageNode = this.loadNextStageNode(stagePrefab);
+const tableRows = table.rows;
+
+// BAD
+const stage: cc.Prefab; // 没有体现stage的类型是cc.Prefab
+const stage = this.loadNextStage(this.stage); // 1. 没有体现stage的类型是cc.Node 2. 本地变量stage和this.stage重名但引用了不同的对象+类型
+const rowList = table.rows; // 列表应以复数命名结尾，不应用List。
+```
+
+几种常见有特殊意义的变量前缀，只应在特定的情况下使用。
+
+| 命名     | 例子                                    | 解释                    |
+| -------- | --------------------------------------- | ----------------------- |
+| `isXxx`  | `const isValidUser = checkUser(user);`  | 记录检查结果的 boolean  |
+| `hasXxx` | `const hasEnoughMoney = money > price;` | 表示拥有 xxx 的 boolean |
