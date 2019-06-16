@@ -246,7 +246,7 @@
 <p>&#x547D;&#x540D;&#x8981;&#x5177;&#x6709;&#x63CF;&#x8FF0;&#x6027;&#xFF0C;&#x53EA;&#x4F7F;&#x7528;&#x4EBA;&#x5C3D;&#x7686;&#x77E5;&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#x8FC7;&#x957F;&#xFF0C;&#x8BA9;&#x4EE3;&#x7801;&#x6613;&#x4E8E;&#x65B0;&#x8BFB;&#x8005;&#x7406;&#x89E3;&#x66F4;&#x91CD;&#x8981;&#x3002;</p>
 <pre><code class="lang-js"><span class="hljs-comment">// GOOD</span>
 <span class="hljs-keyword">const</span> <span class="hljs-built_in">window</span>;
-<span class="hljs-keyword">const</span> numOfCompletedQuestions;
+<span class="hljs-keyword">const</span> completedQuestionCount;
 <span class="hljs-keyword">const</span> failedRoundCount;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlipCoinGameController</span> </span>{}
 <span class="hljs-keyword">const</span> clientIp; <span class="hljs-comment">// &#x4EBA;&#x4EBA;&#x90FD;&#x77E5;&#x9053;IP&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;</span>
@@ -257,8 +257,10 @@
 <span class="hljs-keyword">const</span> failedRdCnt; <span class="hljs-comment">// &#x5220;&#x51CF;&#x5B57;&#x6BCD;&#x540E;&#x96BE;&#x4EE5;&#x7406;&#x89E3;</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FCGameCtl</span> </span>{} <span class="hljs-comment">// FC&#x6709;&#x5F88;&#x591A;&#x79CD;&#x89E3;&#x91CA;&#xFF0C;&#x53EA;&#x6709;&#x4F5C;&#x8005;&#x624D;&#x80FD;&#x7406;&#x89E3;</span>
 </code></pre>
-<h3 id="&#x7C7B;&#xFF08;class&#xFF09;&#xFF0C;&#x63A5;&#x53E3;&#xFF08;interface&#xFF09;&#xFF0C;&#x7C7B;&#x578B;&#xFF08;type&#xFF09;"><a name="&#x7C7B;&#xFF08;class&#xFF09;&#xFF0C;&#x63A5;&#x53E3;&#xFF08;interface&#xFF09;&#xFF0C;&#x7C7B;&#x578B;&#xFF08;type&#xFF09;" class="plugin-anchor" href="#&#x7C7B;&#xFF08;class&#xFF09;&#xFF0C;&#x63A5;&#x53E3;&#xFF08;interface&#xFF09;&#xFF0C;&#x7C7B;&#x578B;&#xFF08;type&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#xFF08;class&#xFF09;&#xFF0C;&#x63A5;&#x53E3;&#xFF08;Interface&#xFF09;&#xFF0C;&#x7C7B;&#x578B;&#xFF08;type&#xFF09;</h3>
-<p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7740;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x4E8B;&#x7269;&#xFF0C;&#x800C;&#x7C7B;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x6A21;&#x7248;&#xFF0C;&#x7528;&#x6765;&#x7EDF;&#x4E00;&#x8868;&#x793A;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x4E8B;&#x7269;&#xFF0C;&#x6240;&#x4EE5;&#x7C7B;&#x7684;&#x547D;&#x540D;&#x8981;&#x4EE5;&#x63CF;&#x8FF0;&#x8FD9;&#x4E00;&#x7C7B;&#x578B;&#x7684;&#x4E8B;&#x7269;&#x4E3A;&#x76EE;&#x7684;&#x3002;&#x63A5;&#x53E3;&#x548C;&#x7C7B;&#x578B;&#x4E0E;&#x7C7B;&#x76F8;&#x4F3C;&#x3002;</p>
+<h3 id="&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type"><a name="&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type" class="plugin-anchor" href="#&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B; (class)&#xFF0C;&#x63A5;&#x53E3; (Interface)&#xFF0C;&#x7C7B;&#x578B; (type)</h3>
+<blockquote>
+<p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7740;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x4E8B;&#x7269;&#xFF0C;&#x800C;&#x7C7B;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x6A21;&#x7248;&#xFF0C;&#x7528;&#x6765;&#x7EDF;&#x4E00;&#x8868;&#x793A;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x4E8B;&#x7269;&#xFF0C;&#x6240;&#x4EE5;&#x7C7B;&#x7684;&#x547D;&#x540D;&#x8981;&#x4EE5;&#x63CF;&#x8FF0;&#x8FD9;&#x4E00;&#x4E8B;&#x7269;&#x7C7B;&#x578B;&#x4E3A;&#x76EE;&#x7684;&#x3002;&#x63A5;&#x53E3;&#x548C;&#x7C7B;&#x578B;&#x540C;&#x7406;&#x3002;</p>
+</blockquote>
 <p>&#x5BF9;&#x7C7B;&#x547D;&#x540D;&#x65F6;&#xFF0C;</p>
 <ul>
 <li>&#x540E;&#x7F00;&#x5E94;&#x8868;&#x793A;&#x4E8B;&#x7269;&#x7684;&#x6839;&#x672C;&#x7C7B;&#x578B;&#xFF0C;&#x4EE5;&#x540D;&#x8BCD;&#x7ED3;&#x5C3E;&#xFF1B;</li>
@@ -272,8 +274,8 @@
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestEnrollmentManager</span> </span>{} <span class="hljs-comment">// &#x540E;&#x7F00;&#x6CA1;&#x6709;&#x8868;&#x793A;&#x4E8B;&#x7269;&#x7684;&#x6839;&#x672C;&#x7C7B;&#x578B;&#x662F;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;Manager</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReviewConfigParse</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">CsvParser</span> </span>{} <span class="hljs-comment">// &#x4E0D;&#x80FD;&#x4EE5;&#x52A8;&#x8BCD;&#x7ED3;&#x5C3E;</span>
 </code></pre>
-<h3 id="&#x65B9;&#x6CD5;&#xFF08;method&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#xFF08;function&#xFF09;"><a name="&#x65B9;&#x6CD5;&#xFF08;method&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#xFF08;function&#xFF09;" class="plugin-anchor" href="#&#x65B9;&#x6CD5;&#xFF08;method&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#xFF08;function&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#xFF08;method&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#xFF08;function&#xFF09;</h3>
-<p>&#x65B9;&#x6CD5;&#x548C;&#x51FD;&#x6570;&#x4EE3;&#x8868;&#x7740;&#x4E00;&#x6BB5;&#x6267;&#x884C;&#x903B;&#x8F91;&#xFF0C;&#x9700;&#x4EE5;&#x52A8;&#x8BCD;&#x5F00;&#x5934;&#xFF0C;&#x52A8;&#x8BCD;&#x540E;&#x9644;&#x52A0;&#x63CF;&#x8FF0;&#x6765;&#x8FDB;&#x4E00;&#x6B65;&#x9650;&#x5B9A;&#x542B;&#x4E49;&#x3002;</p>
+<h3 id="&#x65B9;&#x6CD5;-method&#xFF0C;&#x51FD;&#x6570;-function"><a name="&#x65B9;&#x6CD5;-method&#xFF0C;&#x51FD;&#x6570;-function" class="plugin-anchor" href="#&#x65B9;&#x6CD5;-method&#xFF0C;&#x51FD;&#x6570;-function"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5; (method)&#xFF0C;&#x51FD;&#x6570; (function)</h3>
+<p>&#x65B9;&#x6CD5;&#x548C;&#x51FD;&#x6570;&#x7684;&#x547D;&#x540D;&#x662F;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x4E00;&#x6BB5;&#x903B;&#x8F91;&#x3002;&#x547D;&#x540D;&#x9700;&#x4EE5;&#x52A8;&#x8BCD;&#x5F00;&#x5934;&#xFF0C;&#x52A8;&#x8BCD;&#x540E;&#x9644;&#x52A0;&#x7EC6;&#x8282;&#x6765;&#x8FDB;&#x4E00;&#x6B65;&#x9650;&#x5B9A;&#x542B;&#x4E49;&#x3002;</p>
 <pre><code class="lang-js"><span class="hljs-comment">// GOOD</span>
 authService.loginWithWechat(code);
 submitLoginForm(formData);
@@ -317,17 +319,55 @@ jump(node); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x9650;&#x5B9A;jump&#
 <tr>
 <td><code>onXxxx</code></td>
 <td><code>onClicked</code></td>
-<td>Xxx &#x4E8B;&#x4EF6;&#x7684;&#x54CD;&#x5E94;&#x903B;&#x8F91;&#xFF08;handler&#xFF09;</td>
+<td>Xxx &#x4E8B;&#x4EF6;&#x7684;&#x54CD;&#x5E94;&#x903B;&#x8F91; (handler)</td>
 </tr>
 <tr>
 <td><code>willXxx</code> / <code>aaaWillXxx</code> / <code>preXxx</code></td>
 <td><code>componentWillMount</code> / <code>preRender</code></td>
-<td>Xxx &#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x524D;&#x7684;&#x94A9;&#x5B50;&#xFF08;prehook&#xFF09;</td>
+<td>Xxx &#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x524D;&#x7684;&#x94A9;&#x5B50; (prehook)</td>
 </tr>
 <tr>
 <td><code>didXxx</code> / <code>aaaDidXxx</code> / <code>postXxx</code></td>
 <td><code>componentDidMount</code> / <code>postRender</code></td>
-<td>Xxx &#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x524D;&#x7684;&#x94A9;&#x5B50;&#xFF08;prehook&#xFF09;</td>
+<td>Xxx &#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x524D;&#x7684;&#x94A9;&#x5B50; (prehook)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member"><a name="&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member" class="plugin-anchor" href="#&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF; (variable)&#xFF0C;&#x7C7B;&#x6210;&#x5458; (class member)</h3>
+<p>&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x6210;&#x5458;&#x547D;&#x540D;&#x65F6;&#xFF0C;&#x5E94;&#x4EE5;&#x540D;&#x8BCD;&#x7ED3;&#x5C3E;&#xFF0C;&#x8F85;&#x4EE5;&#x7EC6;&#x8282;&#x4FEE;&#x9970;&#x3002;&#x5E38;&#x89C1;&#x60C5;&#x51B5;&#x6709;&#xFF0C;</p>
+<table>
+<thead>
+<tr>
+<th>&#x60C5;&#x51B5;</th>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x4F8B;&#x5B50;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</td>
+<td>&#x4EE5;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#x7ED3;&#x5C3E;</td>
+<td><code>const newUser = new User()</code></td>
+</tr>
+<tr>
+<td>&#x5BF9;&#x8C61;&#x6570;&#x7EC4;/&#x96C6;&#x5408;</td>
+<td>&#x4EE5;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#x7ED3;&#x5C3E;&#xFF0C;&#x590D;&#x6570;(+s)</td>
+<td><code>const users = findUsers()</code></td>
+</tr>
+<tr>
+<td>&#x8FC7;&#x6EE4;&#x8FC7;&#x7684;&#x6570;&#x7EC4;/&#x96C6;&#x5408;</td>
+<td>&#x589E;&#x52A0;&#x524D;&#x7F00;&#x4FEE;&#x9970;</td>
+<td><code>const activeUsers = users.filter(user =&gt; user.isActive)</code></td>
+</tr>
+<tr>
+<td>&#x8BA1;&#x6570;</td>
+<td>&#x4EE5; count &#x7ED3;&#x5C3E;</td>
+<td><code>const userCount = users.length</code></td>
+</tr>
+<tr>
+<td>&#x6620;&#x5C04;</td>
+<td>&#x4EE5; map &#x7ED3;&#x5C3E;</td>
+<td><code>const idToUserMap = new Map&lt;number, User&gt;()</code></td>
 </tr>
 </tbody>
 </table>
@@ -370,7 +410,7 @@ jump(node); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x9650;&#x5B9A;jump&#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"命名","level":"2.1","depth":1,"previous":{"title":"README","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","alerts"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Smartpi Best Practice","language":"zh-hans","gitbook":"*"},"file":{"path":"style-guide/naming.md","mtime":"2019-06-16T12:32:21.559Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-16T12:32:51.738Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"命名","level":"2.1","depth":1,"previous":{"title":"README","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","alerts"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Smartpi Best Practice","language":"zh-hans","gitbook":"*"},"file":{"path":"style-guide/naming.md","mtime":"2019-06-16T12:57:19.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-16T12:57:37.102Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
