@@ -256,8 +256,11 @@
 <span class="hljs-keyword">const</span> countCmp; <span class="hljs-comment">// &#x542B;&#x7CCA;&#x4E0D;&#x6E05;&#x7684;&#x7F29;&#x5199;</span>
 <span class="hljs-keyword">const</span> failedRdCnt; <span class="hljs-comment">// &#x5220;&#x51CF;&#x5B57;&#x6BCD;&#x540E;&#x96BE;&#x4EE5;&#x7406;&#x89E3;</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FCGameCtl</span> </span>{} <span class="hljs-comment">// FC&#x6709;&#x5F88;&#x591A;&#x79CD;&#x89E3;&#x91CA;&#xFF0C;&#x53EA;&#x6709;&#x4F5C;&#x8005;&#x624D;&#x80FD;&#x7406;&#x89E3;</span>
+
+<span class="hljs-comment">// More BAD</span>
+<span class="hljs-keyword">const</span> data; <span class="hljs-comment">// &#x5404;&#x79CD;&#x4E1C;&#x897F;&#x90FD;&#x53EF;&#x4EE5;&#x662F;data</span>
 </code></pre>
-<h3 id="&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type"><a name="&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type" class="plugin-anchor" href="#&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B; (class)&#xFF0C;&#x63A5;&#x53E3; (Interface)&#xFF0C;&#x7C7B;&#x578B; (type)</h3>
+<h3 id="&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type&#xFF0C;&#x679A;&#x4E3E;-enumeration"><a name="&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type&#xFF0C;&#x679A;&#x4E3E;-enumeration" class="plugin-anchor" href="#&#x7C7B;-class&#xFF0C;&#x63A5;&#x53E3;-interface&#xFF0C;&#x7C7B;&#x578B;-type&#xFF0C;&#x679A;&#x4E3E;-enumeration"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B; (class)&#xFF0C;&#x63A5;&#x53E3; (Interface)&#xFF0C;&#x7C7B;&#x578B; (type)&#xFF0C;&#x679A;&#x4E3E; (enumeration)</h3>
 <blockquote>
 <p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7740;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x4E8B;&#x7269;&#xFF0C;&#x800C;&#x7C7B;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x6A21;&#x7248;&#xFF0C;&#x7528;&#x6765;&#x7EDF;&#x4E00;&#x8868;&#x793A;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x4E8B;&#x7269;&#xFF0C;&#x6240;&#x4EE5;&#x7C7B;&#x7684;&#x547D;&#x540D;&#x8981;&#x4EE5;&#x63CF;&#x8FF0;&#x8FD9;&#x4E00;&#x4E8B;&#x7269;&#x7C7B;&#x578B;&#x4E3A;&#x76EE;&#x7684;&#x3002;&#x63A5;&#x53E3;&#x548C;&#x7C7B;&#x578B;&#x540C;&#x7406;&#x3002;</p>
 </blockquote>
@@ -317,6 +320,16 @@ jump(node); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x9650;&#x5B9A;jump&#
 <td>&#x8F6C;&#x6362;&#x7C7B;&#x578B;/&#x683C;&#x5F0F;&#x4E3A; Xxx</td>
 </tr>
 <tr>
+<td><code>setXxx</code></td>
+<td><code>setGameSpeed</code></td>
+<td>&#x8BBE;&#x5B9A;&#x67D0;&#x4E2A; property &#x7684;&#x503C;</td>
+</tr>
+<tr>
+<td><code>getXxx</code></td>
+<td><code>getDuration</code></td>
+<td>&#x83B7;&#x53D6;&#x67D0;&#x4E2A; property &#x7684;&#x503C;</td>
+</tr>
+<tr>
 <td><code>onXxxx</code></td>
 <td><code>onClicked</code></td>
 <td>Xxx &#x4E8B;&#x4EF6;&#x7684;&#x54CD;&#x5E94;&#x903B;&#x8F91; (handler)</td>
@@ -333,7 +346,7 @@ jump(node); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x9650;&#x5B9A;jump&#
 </tr>
 </tbody>
 </table>
-<h3 id="&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member"><a name="&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member" class="plugin-anchor" href="#&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF; (variable)&#xFF0C;&#x7C7B;&#x6210;&#x5458; (class member)</h3>
+<h3 id="&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member&#xFF0C;&#x5E38;&#x91CF;-constant"><a name="&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member&#xFF0C;&#x5E38;&#x91CF;-constant" class="plugin-anchor" href="#&#x53D8;&#x91CF;-variable&#xFF0C;&#x7C7B;&#x6210;&#x5458;-class-member&#xFF0C;&#x5E38;&#x91CF;-constant"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF; (variable)&#xFF0C;&#x7C7B;&#x6210;&#x5458; (class member)&#xFF0C;&#x5E38;&#x91CF; (constant)</h3>
 <p>&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x6210;&#x5458;&#x547D;&#x540D;&#x65F6;&#xFF0C;&#x5E94;&#x4EE5;&#x540D;&#x8BCD;&#x7ED3;&#x5C3E;&#xFF0C;&#x8F85;&#x4EE5;&#x7EC6;&#x8282;&#x4FEE;&#x9970;&#x3002;&#x5E38;&#x89C1;&#x60C5;&#x51B5;&#x6709;&#xFF0C;</p>
 <table>
 <thead>
@@ -368,6 +381,43 @@ jump(node); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x9650;&#x5B9A;jump&#
 <td>&#x6620;&#x5C04;</td>
 <td>&#x4EE5; map &#x7ED3;&#x5C3E;</td>
 <td><code>const idToUserMap = new Map&lt;number, User&gt;()</code></td>
+</tr>
+<tr>
+<td>&#x96C6;&#x5408;</td>
+<td>&#x4EE5; set &#x7ED3;&#x5C3E;</td>
+<td><code>const userSet = new Set(users)</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js"><span class="hljs-comment">// GOOD</span>
+<span class="hljs-keyword">const</span> stagePrefab: cc.Prefab;
+<span class="hljs-keyword">const</span> stageNode = <span class="hljs-keyword">this</span>.loadNextStageNode(stagePrefab);
+<span class="hljs-keyword">const</span> tableRows = table.rows;
+
+<span class="hljs-comment">// BAD</span>
+<span class="hljs-keyword">const</span> stage: cc.Prefab; <span class="hljs-comment">// &#x6CA1;&#x6709;&#x4F53;&#x73B0;stage&#x7684;&#x7C7B;&#x578B;&#x662F;cc.Prefab</span>
+<span class="hljs-keyword">const</span> stage = <span class="hljs-keyword">this</span>.loadNextStage(<span class="hljs-keyword">this</span>.stage); <span class="hljs-comment">// 1. &#x6CA1;&#x6709;&#x4F53;&#x73B0;stage&#x7684;&#x7C7B;&#x578B;&#x662F;cc.Node 2. &#x672C;&#x5730;&#x53D8;&#x91CF;stage&#x548C;this.stage&#x91CD;&#x540D;&#x4F46;&#x5F15;&#x7528;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;+&#x7C7B;&#x578B;</span>
+<span class="hljs-keyword">const</span> rowList = table.rows; <span class="hljs-comment">// &#x5217;&#x8868;&#x5E94;&#x4EE5;&#x590D;&#x6570;&#x547D;&#x540D;&#x7ED3;&#x5C3E;&#xFF0C;&#x4E0D;&#x5E94;&#x7528;List&#x3002;</span>
+</code></pre>
+<p>&#x51E0;&#x79CD;&#x5E38;&#x89C1;&#x6709;&#x7279;&#x6B8A;&#x610F;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x524D;&#x7F00;&#xFF0C;&#x53EA;&#x5E94;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x540D;</th>
+<th>&#x4F8B;&#x5B50;</th>
+<th>&#x89E3;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isXxx</code></td>
+<td><code>const isValidUser = checkUser(user);</code></td>
+<td>&#x8BB0;&#x5F55;&#x68C0;&#x67E5;&#x7ED3;&#x679C;&#x7684; boolean</td>
+</tr>
+<tr>
+<td><code>hasXxx</code></td>
+<td><code>const hasEnoughMoney = money &gt; price;</code></td>
+<td>&#x8868;&#x793A;&#x62E5;&#x6709; xxx &#x7684; boolean</td>
 </tr>
 </tbody>
 </table>
@@ -410,7 +460,7 @@ jump(node); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x9650;&#x5B9A;jump&#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"命名","level":"2.1","depth":1,"previous":{"title":"README","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","alerts"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Smartpi Best Practice","language":"zh-hans","gitbook":"*"},"file":{"path":"style-guide/naming.md","mtime":"2019-06-16T12:57:19.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-16T12:57:37.102Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"命名","level":"2.1","depth":1,"previous":{"title":"README","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","alerts"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Smartpi Best Practice","language":"zh-hans","gitbook":"*"},"file":{"path":"style-guide/naming.md","mtime":"2019-06-16T13:31:21.083Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-16T13:31:55.186Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
