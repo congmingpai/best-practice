@@ -1,8 +1,6 @@
 # Summary
 
-## Intro
-
-* [Intro](README.md)
+* [README](README.md)
 
 ## 代码风格
 
