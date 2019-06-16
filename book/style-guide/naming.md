@@ -38,7 +38,7 @@ const failedRdCnt; // 删减字母后难以理解
 class FCGameCtl {} // FC有很多种解释，只有作者才能理解
 ```
 
-### 类（class），接口（Interface），类型（type）
+### 类 (class)，接口 (Interface)，类型 (type)
 
 面向对象编程中，对象代表着一个具体的事物，而类是对象的模版，用来统一表示一种类型的事物，所以类的命名要以描述这一类型的事物为目的。接口和类型与类相似。
 
@@ -57,7 +57,7 @@ class TestEnrollmentManager {} // 后缀没有表示事物的根本类型是测�
 class ReviewConfigParse extends CsvParser {} // 不能以动词结尾
 ```
 
-### 方法（method），函数（function）
+### 方法 (method)，函数 (function)
 
 方法和函数代表着一段执行逻辑，需以动词开头，动词后附加描述来进一步限定含义。
 
@@ -75,12 +75,12 @@ jump(node); // 没有限定jump的目的，jumpToXxx会更明确；或作为方�
 
 几种常见有特殊意义的函数/方法名前缀，只应在特定的情况下使用。
 
-| 命名                                | 例子                               | 解释                            |
-| ----------------------------------- | ---------------------------------- | ------------------------------- |
-| `isXxx`                             | `isInteger`                        | 检查类型并返回 boolean          |
-| `checkXxx`                          | `checkParams`                      | 检查内容并返回 boolean          |
-| `validateXxx`                       | `validateParams`                   | 校验类型/内容，失败抛出异常     |
-| `convertToXxx` / `toXxx`            | `convertToString` / `toString`     | 转换类型/格式为 Xxx             |
-| `onXxxx`                            | `onClicked`                        | Xxx 事件的响应逻辑（handler）   |
-| `willXxx` / `aaaWillXxx` / `preXxx` | `componentWillMount` / `preRender` | Xxx 事件发生前的钩子（prehook） |
-| `didXxx` / `aaaDidXxx` / `postXxx`  | `componentDidMount` / `postRender` | Xxx 事件发生前的钩子（prehook） |
+| 命名                                | 例子                               | 解释                           |
+| ----------------------------------- | ---------------------------------- | ------------------------------ |
+| `isXxx`                             | `isInteger`                        | 检查类型并返回 boolean         |
+| `checkXxx`                          | `checkParams`                      | 检查内容并返回 boolean         |
+| `validateXxx`                       | `validateParams`                   | 校验类型/内容，失败抛出异常    |
+| `convertToXxx` / `toXxx`            | `convertToString` / `toString`     | 转换类型/格式为 Xxx            |
+| `onXxxx`                            | `onClicked`                        | Xxx 事件的响应逻辑 (handler)   |
+| `willXxx` / `aaaWillXxx` / `preXxx` | `componentWillMount` / `preRender` | Xxx 事件发生前的钩子 (prehook) |
+| `didXxx` / `aaaDidXxx` / `postXxx`  | `componentDidMount` / `postRender` | Xxx 事件发生前的钩子 (prehook) |
