@@ -1,7 +1,7 @@
 # Summary
 
-* [README](README.md)
+- [README](README.md)
 
 ## 代码风格
 
-* [命名规范](style-guide/naming.md)
+- [命名](style-guide/naming.md)
