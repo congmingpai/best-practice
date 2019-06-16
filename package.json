@@ -6,7 +6,8 @@
   "author": "Greg Wang <gregwym@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "gitbook serve",
+    "clean": "rm -rf ./_book",
+    "start": "yarn clean && gitbook serve",
     "build": "gitbook build",
     "lint": "markdownlint ./book",
     "deploy": "gh-pages -d _book -m '[ci skip] Auto publish book'"
