@@ -1135,11 +1135,6 @@ gitbook-cli@^2.3.2:
     tmp "0.0.31"
     user-home "2.0.0"
 
-gitbook-plugin-alerts@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gitbook-plugin-alerts/-/gitbook-plugin-alerts-0.2.0.tgz#c8c778b41798f808b03beb908822e928a4fbe137"
-  integrity sha512-jpjsGBgr9dpafIOriK/QFbx+NLCdLnwAFDg95lrA7k5UDhRuisgzAadnxJfpNamUdLLBKYRLou9n7KY9euL4Pw==
-
 gitbook-plugin-anchors@^0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-anchors/-/gitbook-plugin-anchors-0.7.1.tgz#8f585b99ab1a602ea714342258c957238e36ec82"
@@ -1147,6 +1142,16 @@ gitbook-plugin-anchors@^0.7.1:
   dependencies:
     cheerio "*"
     github-slugid "1.0.1"
+
+gitbook-plugin-favicon@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-favicon/-/gitbook-plugin-favicon-0.0.2.tgz#b3e41642f152afc6c4535fd9b635dfe31b4c8772"
+  integrity sha1-s+QWQvFSr8bEU1/ZtjXf4xtMh3I=
+
+gitbook-plugin-flexible-alerts@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-flexible-alerts/-/gitbook-plugin-flexible-alerts-1.0.3.tgz#057a15a91209febbfdd0e813437be17da6bbd8a0"
+  integrity sha512-81hXO9fIN4MYkRQ2D56kaNh4XQ/ztjQQQijB0cwXXqTbaLkpo+2P56BH6THRBMApxpFe5S9Q6X5YhTHkMyhHNw==
 
 gitbook-plugin-github@^2.0.0:
   version "2.0.0"

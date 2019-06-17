@@ -1,12 +1,19 @@
 {
-  "title": "Smartpi Best Practice",
+  "title": "聪明派最佳实践",
   "author": "Greg Wang <gregwym@users.noreply.github.com>",
   "language": "zh-hans",
-  "plugins": ["-search", "search-pro", "github", "anchors", "alerts"],
+  "plugins": ["-search", "search-pro", "github", "anchors", "flexible-alerts", "favicon"],
   "root": "./book",
   "pluginsConfig": {
+    "favicon": {
+      "shortcut": "assets/favicon.ico",
+      "bookmark": "assets/favicon.ico"
+    },
     "github": {
       "url": "https://github.com/congmingpai/best-practice"
+    },
+    "flexible-alerts": {
+      "style": "callout"
     },
     "theme-default": {
       "showLevel": true
