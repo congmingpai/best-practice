@@ -21,7 +21,10 @@
 
 ### 通用规则
 
-命名要具有描述性，只使用人尽皆知的缩写，不要担心过长，让代码易于新读者理解更重要。
+1. 命名要具有描述性；
+1. 只使用人尽皆知的缩写，不要担心过长，让代码易于新读者理解更重要；
+1. 避免增加无附加意义的词语；
+1. 不要使用系统保留词语，如 `return` `switch` 或 Cocos 中的 `start` `update`。
 
 ```js
 // GOOD
@@ -39,6 +42,8 @@ class FCGameCtl {} // FC有很多种解释，只有作者才能理解
 
 // More BAD
 const data; // 各种东西都可以是data
+const userInfo = findUser(); // user已经足够具体，Info没有给命名增加额外信息。
+function doCreateObject() {}; // do是个没有明确意义的动词，所以应该省略；createObject足够具体清晰。
 ```
 
 ### 类 (class)，接口 (Interface)，类型 (type)，枚举 (enumeration)
