@@ -6,3 +6,4 @@
 
 - [基础风格](style-guide/style.md)
 - [命名](style-guide/naming.md)
+- [代码准则](style-guide/convention.md)
