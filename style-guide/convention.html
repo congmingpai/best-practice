@@ -1,0 +1,397 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>代码准则 · 聪明派最佳实践</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Greg Wang <gregwym@users.noreply.github.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../web-dev/api.html" />
+    
+    
+    <link rel="prev" href="naming.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">代码风格</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="style.html">
+            
+                <a href="style.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    基础风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="naming.html">
+            
+                <a href="naming.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="convention.html">
+            
+                <a href="convention.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    代码准则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web 开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../web-dev/api.html">
+            
+                <a href="../web-dev/api.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    API 开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >代码准则</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4EE3;&#x7801;&#x51C6;&#x5219;"><a name="&#x4EE3;&#x7801;&#x51C6;&#x5219;" class="plugin-anchor" href="#&#x4EE3;&#x7801;&#x51C6;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x51C6;&#x5219;</h1>
+<h2 id="&#x901A;&#x7528;"><a name="&#x901A;&#x7528;" class="plugin-anchor" href="#&#x901A;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x7528;</h2>
+<h3 id="early-return"><a name="early-return" class="plugin-anchor" href="#early-return"><i class="fa fa-link" aria-hidden="true"></i></a>Early Return</h3>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x65F6;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x65E9;&#x7684;&#x8FD4;&#x56DE;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// GOOD</span>
+() =&gt; {
+  <span class="hljs-keyword">const</span> a = checkA();
+  <span class="hljs-keyword">if</span> (!a) {
+    <span class="hljs-keyword">return</span>;
+  }
+
+  <span class="hljs-keyword">const</span> b = checkB();
+  <span class="hljs-keyword">if</span> (!b) {
+    <span class="hljs-keyword">return</span>;
+  }
+
+  ...
+}
+
+<span class="hljs-comment">// BAD</span>
+() =&gt; {
+  <span class="hljs-keyword">const</span> a = checkA();
+  <span class="hljs-keyword">if</span> (a) {
+    <span class="hljs-keyword">const</span> b = checkB();
+    <span class="hljs-keyword">if</span> (b) {
+      <span class="hljs-keyword">const</span> c = checkC();
+      <span class="hljs-keyword">if</span> (c) {
+        ...
+      }
+    }
+  }
+}
+</code></pre>
+<h3 id="&#x7EAF;&#x51FD;&#x6570;-pure-function"><a name="&#x7EAF;&#x51FD;&#x6570;-pure-function" class="plugin-anchor" href="#&#x7EAF;&#x51FD;&#x6570;-pure-function"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EAF;&#x51FD;&#x6570; Pure function</h3>
+<p>&#x76F8;&#x540C;&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x6C38;&#x8FDC;&#x4F1A;&#x5F97;&#x5230;&#x76F8;&#x540C;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x800C;&#x4E14;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x53EF;&#x89C2;&#x5BDF;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x5373;&#x4E3A;&#x7EAF;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x7EAF;&#x51FD;&#x6570;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x53EF;&#x79FB;&#x690D;/&#x53EF;&#x590D;&#x7528;</li>
+<li>&#x53EF;&#x6D4B;&#x8BD5;</li>
+<li>&#x53EF;&#x7F13;&#x5B58;</li>
+<li>&#x53EF;&#x66FF;&#x6362;</li>
+</ol>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch3.html" target="_blank">&#x7EAF;&#x51FD;&#x6570;&#x7684;&#x597D;&#x5904;</a></p>
+<pre><code class="lang-js"><span class="hljs-comment">// GOOD</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">plus</span>(<span class="hljs-params">a, b</span>) </span>{
+  <span class="hljs-keyword">return</span> a + b;
+}
+<span class="hljs-keyword">const</span> c = plus(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+<span class="hljs-built_in">console</span>.log(c);
+
+<span class="hljs-comment">// BAD1&#xFF1A;&#x51FD;&#x6570;&#x6709;&#x526F;&#x4F5C;&#x7528;&#xFF08;&#x4FEE;&#x6539;&#x4E86;&#x5916;&#x90E8;&#x72B6;&#x6001;&#xFF09;&#xFF0C;&#x4E0D;&#x662F;&#x7EAF;&#x51FD;&#x6570;</span>
+<span class="hljs-keyword">let</span> c = <span class="hljs-number">0</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">plusWithSideEffect</span>(<span class="hljs-params">a, b</span>) </span>{
+  c = a + b;
+}
+plusWithSideEffect(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+<span class="hljs-built_in">console</span>.log(c);
+
+<span class="hljs-comment">// BAD2&#xFF1A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;&#x5916;&#x90E8;&#x72B6;&#x6001;&#xFF0C;&#x8F93;&#x5165;</span>
+<span class="hljs-keyword">let</span> b = <span class="hljs-number">2</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">plusNotPure</span>(<span class="hljs-params">a</span>) </span>{
+  <span class="hljs-keyword">return</span> a + b;
+}
+<span class="hljs-keyword">const</span> c = plusNotPure(<span class="hljs-number">1</span>);
+<span class="hljs-built_in">console</span>.log(c);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="naming.html" class="navigation navigation-prev " aria-label="Previous page: 命名">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../web-dev/api.html" class="navigation navigation-next " aria-label="Next page: API 开发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"代码准则","level":"2.3","depth":1,"next":{"title":"API 开发","level":"3.1","depth":1,"path":"web-dev/api.md","ref":"web-dev/api.md","articles":[]},"previous":{"title":"命名","level":"2.2","depth":1,"path":"style-guide/naming.md","ref":"style-guide/naming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","flexible-alerts","favicon"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico"},"flexible-alerts":{"style":"callout","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"聪明派最佳实践","language":"zh-hans","gitbook":"*"},"file":{"path":"style-guide/convention.md","mtime":"2019-07-22T12:02:27.958Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-22T12:02:59.455Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

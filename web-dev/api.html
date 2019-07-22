@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>基础风格 · 聪明派最佳实践</title>
+        <title>API 开发 · 聪明派最佳实践</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -66,10 +66,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="naming.html" />
     
-    
-    <link rel="prev" href="../" />
+    <link rel="prev" href="../style-guide/convention.html" />
     
 
     
@@ -129,9 +127,9 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="style.html">
+        <li class="chapter " data-level="2.1" data-path="../style-guide/style.html">
             
-                <a href="style.html">
+                <a href="../style-guide/style.html">
             
                     
                         <b>2.1.</b>
@@ -144,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="naming.html">
+        <li class="chapter " data-level="2.2" data-path="../style-guide/naming.html">
             
-                <a href="naming.html">
+                <a href="../style-guide/naming.html">
             
                     
                         <b>2.2.</b>
@@ -159,9 +157,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="convention.html">
+        <li class="chapter " data-level="2.3" data-path="../style-guide/convention.html">
             
-                <a href="convention.html">
+                <a href="../style-guide/convention.html">
             
                     
                         <b>2.3.</b>
@@ -181,9 +179,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../web-dev/api.html">
+        <li class="chapter active" data-level="3.1" data-path="api.html">
             
-                <a href="../web-dev/api.html">
+                <a href="api.html">
             
                     
                         <b>3.1.</b>
@@ -226,7 +224,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >基础风格</a>
+        <a href=".." >API 开发</a>
     </h1>
 </div>
 
@@ -241,20 +239,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x57FA;&#x7840;&#x98CE;&#x683C;"><a name="&#x57FA;&#x7840;&#x98CE;&#x683C;" class="plugin-anchor" href="#&#x57FA;&#x7840;&#x98CE;&#x683C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x7840;&#x98CE;&#x683C;</h1>
-<h2 id="typescript"><a name="typescript" class="plugin-anchor" href="#typescript"><i class="fa fa-link" aria-hidden="true"></i></a>TypeScript</h2>
-<p>TypeScript(&#x548C; JavaScript)&#x7684;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x4E0A;&#x7EDF;&#x4E00;&#x4F7F;&#x7528;
-<a href="https://prettier.io" target="_blank">prettier &#x98CE;&#x683C;</a> + <a href="http://airbnb.io/javascript/" target="_blank">airbnb &#x89C4;&#x8303;</a>&#xFF0C;
-&#x5E76;&#x7528;<a href="https://standardjs.com/" target="_blank">standard &#x89C4;&#x8303;</a>&#x52A0;&#x4EE5;&#x8865;&#x5145;&#x3002;
-&#x6807;&#x51C6;&#x95F4;&#x6709;&#x51B2;&#x7A81;&#x65F6;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x662F; prettier &gt; airbnb &gt; standard &#x3002;</p>
-<ul>
-<li>Airbnb &#x89C4;&#x8303; ES6 &#x7248;&#x4E2D;&#x6587;&#x53C2;&#x8003;&#xFF1A;<a href="https://github.com/yuche/javascript" target="_blank">https://github.com/yuche/javascript</a></li>
-<li>Standard &#x89C4;&#x8303;&#x4E2D;&#x6587;&#x53C2;&#x8003;&#xFF1A;<a href="https://standardjs.com/rules-zhcn.html" target="_blank">https://standardjs.com/rules-zhcn.html</a></li>
-</ul>
-<h3 id="tslint-&#x57FA;&#x7840;&#x914D;&#x7F6E;"><a name="tslint-&#x57FA;&#x7840;&#x914D;&#x7F6E;" class="plugin-anchor" href="#tslint-&#x57FA;&#x7840;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>tslint &#x57FA;&#x7840;&#x914D;&#x7F6E;</h3>
-<pre><code class="lang-json">{
-  <span class="hljs-string">&quot;extends&quot;</span>: [<span class="hljs-string">&quot;tslint-config-standard&quot;</span>, <span class="hljs-string">&quot;tslint-config-airbnb&quot;</span>, <span class="hljs-string">&quot;tslint-config-prettier&quot;</span>]
-}
+                                <h1 id="api-&#x5F00;&#x53D1;"><a name="api-&#x5F00;&#x53D1;" class="plugin-anchor" href="#api-&#x5F00;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a>API &#x5F00;&#x53D1;</h1>
+<h2 id="&#x9519;&#x8BEF;&#x5904;&#x7406;"><a name="&#x9519;&#x8BEF;&#x5904;&#x7406;" class="plugin-anchor" href="#&#x9519;&#x8BEF;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
+<h3 id="ctxthrow"><a name="ctxthrow" class="plugin-anchor" href="#ctxthrow"><i class="fa fa-link" aria-hidden="true"></i></a>ctx.throw</h3>
+<p>&#x4F8B;&#x5982;&#xFF1A;<a href="https://github.com/gregwym/smartpi-server/pull/1423" target="_blank">https://github.com/gregwym/smartpi-server/pull/1423</a>
+&#x5168;&#x5C40;&#x4FEE;&#x590D;: <a href="https://github.com/gregwym/smartpi-server/pull/1436" target="_blank">https://github.com/gregwym/smartpi-server/pull/1436</a></p>
+<pre><code class="lang-js"><span class="hljs-comment">// GOOD</span>
+ctx.throw(<span class="hljs-number">400</span>, <span class="hljs-string">&apos;Sku ID is required&apos;</span>);
+ctx.throw(<span class="hljs-number">400</span>, <span class="hljs-string">&apos;Sku ID is required&apos;</span>);
+
+<span class="hljs-comment">// BAD</span>
+ctx.throw(<span class="hljs-string">&apos;Sku ID is required&apos;</span>); <span class="hljs-comment">// &#x9ED8;&#x8BA4;500</span>
+ctx.throw(<span class="hljs-number">400</span>); <span class="hljs-comment">// Sentry&#x53EA;&#x4F1A;&#x6536;&#x5230;Bad Request&#x7684;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#xFF0C;&#x6CA1;&#x6709;&#x5177;&#x4F53;&#x4FE1;&#x606F;</span>
 </code></pre>
 
                                 
@@ -283,14 +279,10 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: README">
+                <a href="../style-guide/convention.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 代码准则">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="naming.html" class="navigation navigation-next " aria-label="Next page: 命名">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -299,7 +291,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"基础风格","level":"2.1","depth":1,"next":{"title":"命名","level":"2.2","depth":1,"path":"style-guide/naming.md","ref":"style-guide/naming.md","articles":[]},"previous":{"title":"README","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","flexible-alerts","favicon"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico"},"flexible-alerts":{"style":"callout","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"聪明派最佳实践","language":"zh-hans","gitbook":"*"},"file":{"path":"style-guide/style.md","mtime":"2019-07-22T12:02:27.958Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-22T12:02:59.455Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"API 开发","level":"3.1","depth":1,"previous":{"title":"代码准则","level":"2.3","depth":1,"path":"style-guide/convention.md","ref":"style-guide/convention.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","flexible-alerts","favicon"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico"},"flexible-alerts":{"style":"callout","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"聪明派最佳实践","language":"zh-hans","gitbook":"*"},"file":{"path":"web-dev/api.md","mtime":"2019-07-22T12:02:27.958Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-22T12:02:59.455Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
