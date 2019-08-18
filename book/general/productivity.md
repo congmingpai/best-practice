@@ -13,3 +13,4 @@
 
 - [2019 年程序员最值得学习的思维利器——任务分解](https://www.cnblogs.com/levenyes/p/10783861.html)
 - [Code Review 最佳实践](https://zhuanlan.zhihu.com/p/73809355)
+- [修复每个 bug 后都要问这 3 个问题](https://zhuanlan.zhihu.com/p/58616328)
