@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>API 开发 · 聪明派最佳实践</title>
+        <title>计时器 · 聪明派最佳实践</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
                 
             
                 
@@ -67,7 +71,7 @@
 
     
     
-    <link rel="prev" href="../style-guide/typing.html" />
+    <link rel="prev" href="../frontend/jsx.html" />
     
 
     
@@ -127,14 +131,14 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../style-guide/style.html">
+        <li class="chapter " data-level="2.1" data-path="../general/style.html">
             
-                <a href="../style-guide/style.html">
+                <a href="../general/style.html">
             
                     
                         <b>2.1.</b>
                     
-                    基础风格
+                    代码风格
             
                 </a>
             
@@ -142,14 +146,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../style-guide/naming.html">
+        <li class="chapter " data-level="2.2" data-path="../general/naming.html">
             
-                <a href="../style-guide/naming.html">
+                <a href="../general/naming.html">
             
                     
                         <b>2.2.</b>
                     
-                    命名
+                    命名规范
             
                 </a>
             
@@ -157,9 +161,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../style-guide/convention.html">
+        <li class="chapter " data-level="2.3" data-path="../general/convention.html">
             
-                <a href="../style-guide/convention.html">
+                <a href="../general/convention.html">
             
                     
                         <b>2.3.</b>
@@ -172,9 +176,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="../style-guide/typing.html">
+        <li class="chapter " data-level="2.4" data-path="../general/typing.html">
             
-                <a href="../style-guide/typing.html">
+                <a href="../general/typing.html">
             
                     
                         <b>2.4.</b>
@@ -187,21 +191,14 @@
             
         </li>
     
-
-    
-        
-        <li class="header">Web 开发</li>
-        
-        
-    
-        <li class="chapter active" data-level="3.1" data-path="api.html">
+        <li class="chapter " data-level="2.5" data-path="../general/productivity.html">
             
-                <a href="api.html">
+                <a href="../general/productivity.html">
             
                     
-                        <b>3.1.</b>
+                        <b>2.5.</b>
                     
-                    API 开发
+                    工作方式
             
                 </a>
             
@@ -209,28 +206,19 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" >
-            
-                <span>
-            
-                    
-                        <b>3.2.</b>
-                    
-                    架构设计
-            
-                </span>
-            
 
-            
-            <ul class="articles">
-                
     
-        <li class="chapter " data-level="3.2.1" data-path="architecture/backend.html">
+        
+        <li class="header">后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../backend/architecture.html">
             
-                <a href="architecture/backend.html">
+                <a href="../backend/architecture.html">
             
                     
-                        <b>3.2.1.</b>
+                        <b>3.1.</b>
                     
                     后端架构
             
@@ -240,8 +228,69 @@
             
         </li>
     
+        <li class="chapter " data-level="3.2" data-path="../backend/api.html">
+            
+                <a href="../backend/api.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    API 开发
+            
+                </a>
+            
 
-            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web 前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../frontend/jsx.html">
+            
+                <a href="../frontend/jsx.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    JSX 开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cocos 开发</li>
+        
+        
+    
+
+    
+        
+        <li class="header">未整理</li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="timer.html">
+            
+                <a href="timer.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    计时器
+            
+                </a>
+            
+
             
         </li>
     
@@ -275,7 +324,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >API 开发</a>
+        <a href=".." >计时器</a>
     </h1>
 </div>
 
@@ -290,19 +339,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="api-&#x5F00;&#x53D1;"><a name="api-&#x5F00;&#x53D1;" class="plugin-anchor" href="#api-&#x5F00;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a>API &#x5F00;&#x53D1;</h1>
-<h2 id="&#x9519;&#x8BEF;&#x5904;&#x7406;"><a name="&#x9519;&#x8BEF;&#x5904;&#x7406;" class="plugin-anchor" href="#&#x9519;&#x8BEF;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
-<h3 id="ctxthrow"><a name="ctxthrow" class="plugin-anchor" href="#ctxthrow"><i class="fa fa-link" aria-hidden="true"></i></a>ctx.throw</h3>
-<p>&#x4F8B;&#x5982;&#xFF1A;<a href="https://github.com/gregwym/smartpi-server/pull/1423" target="_blank">https://github.com/gregwym/smartpi-server/pull/1423</a>
-&#x5168;&#x5C40;&#x4FEE;&#x590D;: <a href="https://github.com/gregwym/smartpi-server/pull/1436" target="_blank">https://github.com/gregwym/smartpi-server/pull/1436</a></p>
-<pre><code class="lang-js"><span class="hljs-comment">// GOOD</span>
-ctx.throw(<span class="hljs-number">400</span>, <span class="hljs-string">&apos;Sku ID is required&apos;</span>);
-ctx.throw(<span class="hljs-number">400</span>, <span class="hljs-string">&apos;Sku ID is required&apos;</span>);
-
-<span class="hljs-comment">// BAD</span>
-ctx.throw(<span class="hljs-string">&apos;Sku ID is required&apos;</span>); <span class="hljs-comment">// &#x9ED8;&#x8BA4;500</span>
-ctx.throw(<span class="hljs-number">400</span>); <span class="hljs-comment">// Sentry&#x53EA;&#x4F1A;&#x6536;&#x5230;Bad Request&#x7684;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#xFF0C;&#x6CA1;&#x6709;&#x5177;&#x4F53;&#x4FE1;&#x606F;</span>
-</code></pre>
+                                <h1 id="&#x8BA1;&#x65F6;&#x5668;"><a name="&#x8BA1;&#x65F6;&#x5668;" class="plugin-anchor" href="#&#x8BA1;&#x65F6;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BA1;&#x65F6;&#x5668;</h1>
+<h2 id="&#x4F7F;&#x7528;&#x5305;&#x88C5;&#x597D;&#x7684;&#x8BA1;&#x65F6;&#x5668;"><a name="&#x4F7F;&#x7528;&#x5305;&#x88C5;&#x597D;&#x7684;&#x8BA1;&#x65F6;&#x5668;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x5305;&#x88C5;&#x597D;&#x7684;&#x8BA1;&#x65F6;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x5305;&#x88C5;&#x597D;&#x7684;&#x8BA1;&#x65F6;&#x5668;</h2>
+<p>Cocos &#x73AF;&#x5883;</p>
+<ul>
+<li><code>ActiveTimer</code></li>
+</ul>
+<p>Web &#x524D;&#x7AEF;&#x73AF;&#x5883;</p>
+<ul>
+<li><code>&lt;Timer&gt;</code> &#x7EC4;&#x4EF6;&#xFF08;&#x5F85;&#x5B9E;&#x73B0;&#xFF09;</li>
+<li><code>&lt;LongPressButton&gt;</code> &#x7EC4;&#x4EF6;&#xFF08;&#x5F85;&#x5B9E;&#x73B0;&#xFF09;</li>
+</ul>
+<h2 id="&#x5E38;&#x89C1;&#x9519;&#x8BEF;"><a name="&#x5E38;&#x89C1;&#x9519;&#x8BEF;" class="plugin-anchor" href="#&#x5E38;&#x89C1;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C1;&#x9519;&#x8BEF;</h2>
+<ol>
+<li>&#x542F;&#x52A8;&#x65F6;&#x5E94;&#x5148;&#x68C0;&#x67E5;&#x5E76;&#x6E05;&#x9664;&#x5DF2;&#x7ECF;&#x5728;&#x8FD0;&#x884C;&#x7684; timer&#xFF0C;&#x4EE5;&#x9632;&#x91CD;&#x590D;&#x542F;&#x52A8;&#x3002;</li>
+</ol>
 
                                 
                                 </section>
@@ -330,7 +381,7 @@ ctx.throw(<span class="hljs-number">400</span>); <span class="hljs-comment">// S
 
             
                 
-                <a href="../style-guide/typing.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 类型安全">
+                <a href="../frontend/jsx.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: JSX 开发">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -342,7 +393,7 @@ ctx.throw(<span class="hljs-number">400</span>); <span class="hljs-comment">// S
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"API 开发","level":"3.1","depth":1,"next":{"title":"架构设计","level":"3.2","depth":1,"ref":"","articles":[{"title":"后端架构","level":"3.2.1","depth":2,"path":"web-dev/architecture/backend.md","ref":"web-dev/architecture/backend.md","articles":[]}]},"previous":{"title":"类型安全","level":"2.4","depth":1,"path":"style-guide/typing.md","ref":"style-guide/typing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","flexible-alerts","favicon"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico"},"flexible-alerts":{"style":"callout","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"聪明派最佳实践","language":"zh-hans","gitbook":"*"},"file":{"path":"web-dev/api.md","mtime":"2019-08-18T10:47:17.885Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-18T10:47:52.775Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"计时器","level":"6.1","depth":1,"previous":{"title":"JSX 开发","level":"4.1","depth":1,"path":"frontend/jsx.md","ref":"frontend/jsx.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","anchors","flexible-alerts","favicon","intopic-toc"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/congmingpai/best-practice"},"intopic-toc":{"selector":".markdown-section h2","visible":true,"label":"目录"},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico"},"flexible-alerts":{"style":"callout","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"Greg Wang <gregwym@users.noreply.github.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"聪明派最佳实践","language":"zh-hans","gitbook":"*"},"file":{"path":"unsorted/timer.md","mtime":"2019-08-18T11:39:17.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-18T11:39:56.380Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -365,6 +416,18 @@ ctx.throw(<span class="hljs-number">400</span>); <span class="hljs-comment">// S
     
         
         <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
         
     
         
