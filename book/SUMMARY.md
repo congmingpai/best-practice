@@ -12,8 +12,8 @@
 
 ## 后端开发
 
-- [后端架构](web-dev/architecture.md)
-- [API 开发](web-dev/api.md)
+- [后端架构](backend/architecture.md)
+- [API 开发](backend/api.md)
 
 ## Web 前端开发
 
