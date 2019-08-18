@@ -8,6 +8,7 @@
 - [命名规范](general/naming.md)
 - [代码准则](general/convention.md)
 - [类型安全](general/typing.md)
+- [工作方式](general/productivity.md)
 
 ## 后端开发
 
