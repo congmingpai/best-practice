@@ -4,8 +4,8 @@
 
 ## 通用规范
 
-- [基础风格](general/style.md)
-- [命名](general/naming.md)
+- [代码风格](general/style.md)
+- [命名规范](general/naming.md)
 - [代码准则](general/convention.md)
 - [类型安全](general/typing.md)
 
