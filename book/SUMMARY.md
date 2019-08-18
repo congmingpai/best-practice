@@ -16,3 +16,7 @@
   - [JSX 开发](web-dev/frontend/jsx.md)
 - 架构设计
   - [后端架构](web-dev/architecture/backend.md)
+
+## 未整理
+
+- [计时器](unsorted/timer.md)
