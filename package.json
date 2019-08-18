@@ -22,6 +22,7 @@
     "gitbook-plugin-favicon": "^0.0.2",
     "gitbook-plugin-flexible-alerts": "^1.0.3",
     "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-intopic-toc": "^1.0.1",
     "gitbook-plugin-search-pro": "^2.0.2"
   }
 }

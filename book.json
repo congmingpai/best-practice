@@ -2,7 +2,7 @@
   "title": "聪明派最佳实践",
   "author": "Greg Wang <gregwym@users.noreply.github.com>",
   "language": "zh-hans",
-  "plugins": ["-search", "search-pro", "github", "anchors", "flexible-alerts", "favicon"],
+  "plugins": ["-search", "search-pro", "github", "anchors", "flexible-alerts", "favicon", "intopic-toc"],
   "root": "./book",
   "pluginsConfig": {
     "favicon": {
@@ -17,6 +17,9 @@
     },
     "theme-default": {
       "showLevel": true
+    },
+    "intopic-toc": {
+      "label": "目录"
     }
   }
 }

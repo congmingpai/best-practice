@@ -1158,6 +1158,11 @@ gitbook-plugin-github@^2.0.0:
   resolved "https://registry.yarnpkg.com/gitbook-plugin-github/-/gitbook-plugin-github-2.0.0.tgz#5166e763cfcc402d432880b7a6c85c1c54b56a8d"
   integrity sha1-UWbnY8/MQC1DKIC3pshcHFS1ao0=
 
+gitbook-plugin-intopic-toc@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-intopic-toc/-/gitbook-plugin-intopic-toc-1.0.1.tgz#ac7f6479188b5648d4f1b745cb6584f240b84c7b"
+  integrity sha512-LcPUFlPWFmL4lchPrAcFXjDXoNlNnxYkW6qUo60O4pgwFjdkxFbrHkUVn3Ftu53vnxfxyZRC/pmKm6E2Q+uRIw==
+
 gitbook-plugin-search-pro@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-search-pro/-/gitbook-plugin-search-pro-2.0.2.tgz#7ce76e8f65c2044489b9c692736b23f81fe6a1f2"
